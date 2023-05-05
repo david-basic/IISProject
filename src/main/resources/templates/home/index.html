@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.css}"/>
+</head>
+<body style="height: 100vh;" class="d-flex text-center text-bg-dark">
+<div class="d-flex w-100 h-100 mx-auto flex-column">
+    <div class="mb-auto" th:insert="~{/header :: header}"></div>
+
+    <main class="px-3">
+        <p class="lead">David Bašić IIS project</p>
+    </main>
+
+    <div class="mt-auto" th:insert="~{/footer :: footer}"></div>
+</div>
+
+<script th:src="@{/webjars/jquery/jquery.js}"></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.js}"></script>
+</body>
+</html>
